@@ -28,10 +28,10 @@
       </a>
       <nav class="nav__links" aria-label="Sections">
         <a href="#film">Film</a>
-        <a href="#try">Try it</a>
         <a href="#how">How it works</a>
         <a href="#trust">Responsible AI</a>
         <a href="#results">Results</a>
+        <a href="#try">Try it</a>
       </nav>
       <a class="btn btn--small" href="https://www.hellohumpback.ca" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
     </div>
@@ -42,13 +42,14 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="contours" aria-hidden="true"></div>
       <div class="wrap hero__inner">
-        <p class="eyebrow">Newfoundland and Labrador Tourism &times; Happywhale</p>
+        <p class="eyebrow">Newfoundland and Labrador Tourism</p>
         <h1 id="hero-title">Don't just watch whales. <span>Meet them.</span></h1>
         <p class="lede">Hello Humpback uses AI to identify the exact whale in a traveller's photo and tell its real life story. A fleeting tourist moment becomes a lifelong connection, and every traveller becomes a citizen scientist.</p>
       </div>
 
       <div class="wrap wrap--wide" id="film">
-        <div class="film" data-yt="6z2VRDVks-M">
+        <div class="film">
+          <video class="film__video" src="assets/hello-humpback-case-film.mp4" preload="none" playsinline aria-label="Hello Humpback case film"></video>
           <img class="film__poster" src="assets/bigtail.jpg" alt="" loading="eager">
           <button class="film__play" type="button" aria-label="Play the Hello Humpback case film">
             <span class="film__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
@@ -63,31 +64,6 @@
           <li><strong>62</strong><span>whales new to science, 10&times; the year before</span></li>
           <li><strong>23,000</strong><span>people now following "their" whale</span></li>
         </ul>
-      </div>
-    </section>
-
-    <!-- TRY IT -->
-    <section class="try" id="try" aria-labelledby="try-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow eyebrow--dark">Try it yourself</p>
-          <h2 id="try-title">No boat required.</h2>
-          <p>Every tail below belongs to a real humpback. Save one, upload it at hellohumpback.ca, and meet the whale in about the time it takes to read this sentence.</p>
-        </div>
-        <ol class="steps" role="list">
-          <li><span>1</span>Save a tail below</li>
-          <li><span>2</span>Upload it at <a href="https://www.hellohumpback.ca" target="_blank" rel="noopener">hellohumpback.ca</a></li>
-          <li><span>3</span>Meet your whale</li>
-        </ol>
-        <ul class="tails" role="list">
-          <li><a href="assets/tail-1.jpg" download="humpback-fluke-1.jpg" aria-label="Save tail 1"><img src="assets/tail-1.jpg" alt="Humpback fluke with bright white underside" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-          <li><a href="assets/tail-3.jpg" download="humpback-fluke-2.jpg" aria-label="Save tail 2"><img src="assets/tail-3.jpg" alt="Humpback fluke rising beside a dark cliff" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-          <li><a href="assets/tail-4.jpg" download="humpback-fluke-3.jpg" aria-label="Save tail 3"><img src="assets/tail-4.jpg" alt="Humpback fluke under a bright sky" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-          <li><a href="assets/tail-5.jpg" download="humpback-fluke-4.jpg" aria-label="Save tail 4"><img src="assets/tail-5.jpg" alt="Humpback tail lifting vertically from the water" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-          <li><a href="assets/tail-7.jpg" download="humpback-fluke-5.jpg" aria-label="Save tail 5"><img src="assets/tail-7.jpg" alt="Humpback fluke in front of sea cliffs" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-          <li><a href="assets/tail-9.jpg" download="humpback-fluke-6.jpg" aria-label="Save tail 6"><img src="assets/tail-9.jpg" alt="Humpback fluke with mottled white pattern" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
-        </ul>
-        <p class="try__cta"><a class="btn" href="https://www.hellohumpback.ca" target="_blank" rel="noopener">Open Hello Humpback <span aria-hidden="true">↗</span></a></p>
       </div>
     </section>
 
@@ -156,6 +132,21 @@
             <figcaption>Mobile-first, built for use on the boat</figcaption>
           </figure>
         </div>
+      </div>
+    </section>
+
+    <!-- YOUR WHALE -->
+    <section class="yours" aria-labelledby="yours-title">
+      <div class="wrap yours__grid">
+        <div>
+          <p class="eyebrow eyebrow--dark">The real magic</p>
+          <h2 id="yours-title">It's not a whale. It's <em>your</em> whale.</h2>
+          <p>The moment that matters happens when the photo is yours. A tail you snapped from a rocking boat suddenly has a name, a past, maybe even a journey from the Caribbean. Then you tell everyone about it, like it's the most interesting whale in the ocean. To you, it is.</p>
+          <p>That sense of ownership turns a one-hour excursion into an ongoing relationship. 23,000 people chose to follow their whale and hear about it every time it surfaces again, anywhere in the world.</p>
+        </div>
+        <figure class="yours__media">
+          <img src="assets/newwhales.jpg" alt="Three phones showing whale introductions: hello Cannon, hello Westyn, hello Cassie" loading="lazy" width="1365" height="870">
+        </figure>
       </div>
     </section>
 
@@ -295,6 +286,31 @@
       </div>
     </section>
 
+    <!-- TRY IT -->
+    <section class="try" id="try" aria-labelledby="try-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow eyebrow--dark">Try it yourself</p>
+          <h2 id="try-title">Borrow a whale.</h2>
+          <p>Hello Humpback is at its best with a whale you met yourself. Short of a trip to Newfoundland and Labrador, borrow one of these real flukes to see how it works. Just know your own whale would mean a lot more.</p>
+        </div>
+        <ol class="steps" role="list">
+          <li><span>1</span>Save a tail below</li>
+          <li><span>2</span>Upload it at <a href="https://www.hellohumpback.ca" target="_blank" rel="noopener">hellohumpback.ca</a></li>
+          <li><span>3</span>Meet the whale</li>
+        </ol>
+        <ul class="tails" role="list">
+          <li><a href="assets/tail-1.jpg" download="humpback-fluke-1.jpg" aria-label="Save tail 1"><img src="assets/tail-1.jpg" alt="Humpback fluke with bright white underside" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+          <li><a href="assets/tail-3.jpg" download="humpback-fluke-2.jpg" aria-label="Save tail 2"><img src="assets/tail-3.jpg" alt="Humpback fluke rising beside a dark cliff" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+          <li><a href="assets/tail-4.jpg" download="humpback-fluke-3.jpg" aria-label="Save tail 3"><img src="assets/tail-4.jpg" alt="Humpback fluke under a bright sky" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+          <li><a href="assets/tail-5.jpg" download="humpback-fluke-4.jpg" aria-label="Save tail 4"><img src="assets/tail-5.jpg" alt="Humpback tail lifting vertically from the water" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+          <li><a href="assets/tail-7.jpg" download="humpback-fluke-5.jpg" aria-label="Save tail 5"><img src="assets/tail-7.jpg" alt="Humpback fluke in front of sea cliffs" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+          <li><a href="assets/tail-9.jpg" download="humpback-fluke-6.jpg" aria-label="Save tail 6"><img src="assets/tail-9.jpg" alt="Humpback fluke with mottled white pattern" loading="lazy" width="720" height="705"><span aria-hidden="true">Save</span></a></li>
+        </ul>
+        <p class="try__cta"><a class="btn" href="https://www.hellohumpback.ca" target="_blank" rel="noopener">Open Hello Humpback <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
     <!-- CLOSE -->
     <section class="close" aria-labelledby="close-title">
       <div class="contours" aria-hidden="true"></div>
@@ -307,7 +323,7 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <p>Hello Humpback is from Newfoundland and Labrador Tourism, in partnership with <a href="https://happywhale.com" target="_blank" rel="noopener">Happywhale</a>.</p>
+      <p>Hello Humpback is a Newfoundland and Labrador Tourism initiative. Whale identification and sighting data courtesy of <a href="https://happywhale.com" target="_blank" rel="noopener">Happywhale</a>.</p>
       <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
   </footer>

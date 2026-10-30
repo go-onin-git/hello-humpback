@@ -1,17 +1,14 @@
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Case film: load YouTube only on click, so the page stays fast
+  // Case film: self-hosted, so there's no third-party player chrome
   const film = document.querySelector('.film');
   film?.querySelector('.film__play').addEventListener('click', () => {
-    const id = film.dataset.yt;
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
-    iframe.title = 'Hello Humpback case film';
-    iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-    iframe.allowFullscreen = true;
-    film.appendChild(iframe);
-    iframe.focus();
+    const video = film.querySelector('video');
+    film.classList.add('is-playing');
+    video.controls = true;
+    video.play();
+    video.focus();
   });
 
   // Data in, story out: link each sighting to the sentence it produced
@@ -50,7 +47,7 @@
   };
 
   // Reveal on scroll
-  const revealTargets = document.querySelectorAll('.section-head, .pipe, .how__media figure, .record, .story, .principles li, .rcol, .bigquote, .insight__body, .kpis li, .tails li');
+  const revealTargets = document.querySelectorAll('.section-head, .pipe, .how__media figure, .record, .story, .principles li, .rcol, .bigquote, .yours__media, .insight__body, .kpis li, .tails li');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     revealTargets.forEach((el) => el.classList.add('reveal'));
     const io = new IntersectionObserver((entries) => {

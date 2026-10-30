@@ -171,7 +171,7 @@ p { margin: 0 0 1em; }
 .try .btn:hover { background: var(--blue); }
 
 /* INSIGHT */
-.insight { padding: var(--section) 0; background: var(--navy-900); }
+.insight { padding: var(--section) 0; background: var(--navy-900); border-top: 1px solid rgba(255,255,255,.07); }
 .insight__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: end; }
 .insight__body p { color: rgba(255,255,255,.8); font-size: 18px; }
 .bigquote { margin: clamp(56px, 8vw, 100px) 0 0; padding: clamp(32px, 5vw, 56px) 0 0; border-top: 1px solid rgba(255,255,255,.12); }
@@ -310,3 +310,20 @@ p { margin: 0 0 1em; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* YOUR WHALE */
+.yours { background: var(--ice); color: var(--ink); padding: var(--section) 0; }
+.yours__grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.yours h2 { margin-bottom: 24px; }
+.yours h2 em { font-style: normal; color: var(--blue); }
+.yours p:not(.eyebrow) { font-size: 18px; color: var(--ink-soft); }
+.yours__media { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: 0 30px 70px -35px rgba(22,36,58,.55); }
+.yours__media img { width: 100%; }
+@media (max-width: 800px) { .yours__grid { grid-template-columns: 1fr; } }
+
+/* Trial sits late in the page, kept light and compact */
+.try { background: var(--white); border-top: 1px solid rgba(22,36,58,.08); }
+
+/* Self-hosted film */
+.film__video { position: absolute; inset: 0; width: 100%; height: 100%; background: #000; }
+.film.is-playing .film__poster, .film.is-playing .film__play, .film.is-playing::after { display: none; }
